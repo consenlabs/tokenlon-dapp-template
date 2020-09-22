@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build",
+    "target": "es6",
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@app/assets/*": ["./public/assets/*"],
+      "@app/locales/*": ["./public/locales/*"]
+    }
+  },
+  "include": ["src/**/*", "../typings"],
+  "exclude": ["node_modules"]
+}

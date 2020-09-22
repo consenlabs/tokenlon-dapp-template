@@ -1,0 +1,39 @@
+.trade-tab {
+  height: 66px;
+  background-color: #098de6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    position: relative;
+    color: #fff;
+    opacity: 0.5;
+    font-style: normal;
+    font-family: sans-serif, Noto Sans SC;
+    font-weight: 500;
+    line-height: 19px;
+    font-size: 17px;
+    -webkit-tap-highlight-color: transparent;
+    &.active {
+      color: #fff;
+      opacity: 1;
+      font-weight: 500;
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        left: 8px;
+        height: 2px;
+        background: #fff;
+        width: 15px;
+        content: '';
+      }
+    }
+  }
+  .buy-tab {
+    margin-left: 7px;
+  }
+  .sell-tab {
+    margin-left: 45px;
+  }
+}
